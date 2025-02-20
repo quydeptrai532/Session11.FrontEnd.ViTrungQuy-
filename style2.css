@@ -1,0 +1,36 @@
+header,footer{
+    background-color: aqua;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px;
+}
+.blue{
+    flex:1;
+    background-color: blue;
+    padding: 100px;
+    text-align: center;
+}
+.red{
+    flex:1;
+    background-color: red;
+    padding: 100px;
+    text-align: center;
+}
+.orange{
+    flex:1;
+    background-color: orange;
+    padding: 100px;
+    text-align: center;
+}
+@media screen and (max-width:1024px) {
+    .rows{
+        flex-direction: column;
+        height: fit-content;
+    }
+}

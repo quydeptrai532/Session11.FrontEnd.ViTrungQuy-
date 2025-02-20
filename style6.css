@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    background-color: #a6c8ff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.content {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 40px;
+}
+
+.sign-up {
+    background-color: #d4e4ff;
+    text-align: center;
+    padding: 30px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.feature {
+    flex: 1 1 calc(33.33% - 10px);
+    background-color: #f5b971;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .feature {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+
+    .sign-up {
+        order: 1;
+    }
+
+    .content {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .feature {
+        flex: 1 1 calc(50% - 10px);
+    }
+    .content {
+        order: 1;
+    }
+
+    .features {
+        order: 2;
+    }
+
+    .sign-up {
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 480px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature {
+        flex: 1 1 100%;
+    }
+
+    .content {
+        order: 1;
+    }
+
+    .features {
+        order: 2;
+    }
+
+    .sign-up {
+        order: 3;
+    }
+}

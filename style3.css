@@ -1,0 +1,55 @@
+header{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+.rows{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+}
+.hotpink{
+    background-color: hotpink;
+    text-align: center;
+    padding: 40px;
+    width: 25%
+}
+.pink{
+    background-color: pink;
+    text-align: center;
+    padding: 40px;
+    width: 50%;
+    margin: 20px 0;
+}
+footer{
+    text-align: center;
+    padding: 40px;
+    background-color: blue;
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .rows{
+        flex-wrap: wrap;
+    } 
+    .pink{
+        
+        width: calc(100% - 100px);
+        
+    }
+    .hotpink{
+        
+         width: calc(50% - 100px);
+         
+     }
+}
+@media screen and (max-width:768px) {
+    .rows{
+        flex-wrap: wrap;
+    } 
+    .hotpink,.pink{
+        
+         width: calc(100% - 100px);
+         
+     }
+}
